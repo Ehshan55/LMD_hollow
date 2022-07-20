@@ -1,0 +1,80 @@
+/* for order details badges */
+.align-horrozontal {
+  display: flex;
+  gap: 10px;
+  padding-block: 15px;
+  padding-inline: 5px;
+}
+
+
+/* For Landing page top image */
+.web-and-app {
+  max-width: 125%;
+  height: auto;
+}
+
+@media only screen and (max-width: 855px) {
+  .web-and-app {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* For inserted web section */
+/* .web-feature-section{
+  background: url(/home/img/lmd_screenshort.png)no-repeat center center / cover;
+} */
+.web-feature-section:before {
+  background-image: linear-gradient(to right, rgba(32, 40, 119, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.9), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95));
+}
+
+
+
+/* Landing page image animation */
+
+.fadein-effect {
+  /* position: absolute; */
+  -webkit-animation: appear 1s;
+  animation: appear 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Landing on scroll down animation  */
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.leaflet-container {
+  width: 100wh;
+  height: 30vh;
+}

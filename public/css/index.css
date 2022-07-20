@@ -1,0 +1,101 @@
+.save-btn-wrapper {
+  margin-top: 2rem;
+}
+.save-btn-wrapper button {
+  min-width: 16.5rem;
+}
+
+/*  Wizard css */
+
+.plans-cards-layout {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.plans-card {
+  width: 45%;
+  margin: 10px;
+}
+
+.verify-usernames {
+  width: 47%;
+}
+
+.verify-username-card {
+  width: 80%;
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.verify-username-logo {
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  left: 30px;
+  
+  }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .plans-card {
+    width: 100%;
+    margin: 10px;
+  }
+
+.verify-usernames {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.verify-username-card {
+  width: 100%;
+  position: relative;
+
+}
+
+.verify-username-logo {
+display: none;}
+
+  .plans-cards-layout {
+    display: -moz-box;
+    display: flex;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    flex-direction: column;
+  }
+}
+
+.theme-item {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+
+.mediaCard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  box-shadow: 2px 0px 6px #7876F6;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .mediaCard {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.setup-footer {
+  margin-top: 8px;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  color: #bdbdbd;
+}

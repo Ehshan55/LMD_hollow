@@ -1,0 +1,49 @@
+{
+  "name": "localdelivery",
+  "version": "1.0.0",
+  "description": "Local delivery by scrollengine Digirex",
+  "main": "app.js",
+  "scripts": {
+    "dev": "next",
+    "start": "NODE_ENV=production next start -p 3001",
+    "startprod": "next start -p 3001",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "nextdev": "nodemon ./app.js --watch ./app.js",
+    "build": "next build",
+    "heroku-postbuild": "npm run build"
+  },
+  "author": "digirex",
+  "license": "ISC",
+  "dependencies": {
+    "@react-google-maps/api": "^2.12.0",
+    "@shopify/app-bridge-react": "^3.1.1",
+    "@shopify/app-bridge-utils": "^3.1.1",
+    "@shopify/polaris": "^9.19.0",
+    "axios": "^0.27.2",
+    "cookie": "^0.5.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "js-cookie": "^3.0.1",
+    "leaflet": "^1.8.0",
+    "leaflet-defaulticon-compatibility": "^0.1.1",
+    "leaflet-geosearch": "^3.6.1",
+    "moment-timezone": "^0.5.34",
+    "next": "^12.2.0",
+    "next-cookies": "^2.0.3",
+    "react": "^17.0.0",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-dom": "^17.0.0",
+    "react-country-region-selector": "^3.4.0",
+    "react-google-autocomplete": "^2.7.0",
+    "react-leaflet": "^3.2.5",
+    "react-lodash": "^0.1.2",
+    "react-moment": "^1.1.2",
+    "react-switch": "^7.0.0",
+    "react-tageditor": "^0.2.3",
+    "request": "^2.88.2",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
